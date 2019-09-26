@@ -4,7 +4,10 @@ module.exports = (api) ->
 	api.chainWebpack (server, { isServer }) ->
 		if isServer
 			server.externals [
-				nodeExternals whitelist: [/^vuetify/]
+				nodeExternals whitelist: [
+					/^vuetify/
+					/\.css$/
+				]
 			]
 			
 	api.loadSource (store) ->

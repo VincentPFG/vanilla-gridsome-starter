@@ -9,7 +9,8 @@
       if (isServer) {
         return server.externals([
           nodeExternals({
-            whitelist: [/^vuetify/]
+            whitelist: [/^vuetify/,
+          /\.css$/]
           })
         ]);
       }
