@@ -1,0 +1,30 @@
+{
+  "name": "my-gridsome-site",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore",
+    "coffee": "coffee -o ./ -wc coffee"
+  },
+  "dependencies": {
+    "@gridsome/source-filesystem": "^0.6.0",
+    "@gridsome/transformer-remark": "^0.3.4",
+    "@mdi/font": "^4.4.95",
+    "coffee-loader": "^0.9.0",
+    "coffeescript": "^2.4.1",
+    "gridsome": "^0.6.0",
+    "materialize-css": "^1.0.0-rc.2",
+    "node-sass": "^4.12.0",
+    "sass": "^1.22.12",
+    "sass-loader": "^8.0.0",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
+    "vuetify": "^2.0.17",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "devDependencies": {
+    "gridsome-plugin-pug": "0.0.3",
+    "pug": "^2.0.4"
+  }
+}
