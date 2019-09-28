@@ -4,12 +4,7 @@ Layout
 </template>
 
 <page-query>
-# query Post ($path: String!) {
-#   post: post (path: $path) {
-#     title
-#     content
-#   }
-# }
+
 </page-query>
 
 <script lang='coffee'>
