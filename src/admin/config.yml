@@ -6,21 +6,30 @@ media_folder: "static/uploads"
 public_folder: "/uploads"
 
 collections:
--   name: "posts"
+-   
+    name: "posts"
     label: "Posts"
     folder: "posts"
     create: true
     slug: "{{slug}}"
     fields:
-    -   label: "Titre"
+    -
+        label: "Titre"
         name: "title"
         widget: "string"
-    -   label: "Excerpt"
+    -
+        label: "Excerpt"
         name: "excerpt"
         widget: "string"
-    -   label: "Publish Date"
+    -
+        label: "Publish Date"
         name: "date"
         widget: "date"
-    -   label: "Body"
+    -
+        label: "Body"
         name: "body"
         widget: "markdown"
+    -
+        label: 'coucou'
+        name: 'test'
+        widget: 'string'
