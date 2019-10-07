@@ -1,12 +1,13 @@
-import Vuetify from 'vuetify'
-import options from './vuetify.coffee'
-
 import DefaultLayout from '~/layouts/Default.vue'
+import Vuetify from './vuetify.coffee'
+import Apollo from './apollo.coffee'
 
 
-export default (Vue, { appOptions, head }) ->
-	Vue.use Vuetify
-
-	appOptions.vuetify = new Vuetify options
-	
+export default (Vue, {appOptions}) ->
 	Vue.component 'Layout', DefaultLayout
+
+	Vue.use Vuetify.plugin
+	appOptions.vuetify = Vuetify.instance
+
+	Vue.use Apollo.plugin
+	appOptions.apolloProvider = Apollo.provider

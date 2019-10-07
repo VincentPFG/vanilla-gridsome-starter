@@ -4,5 +4,9 @@ Layout
 </template>
 
 <script lang='coffee'>
-
+export default
+    data: ->
+        un: 'test'
+    mounted: ->
+        console.log @options
 </script>

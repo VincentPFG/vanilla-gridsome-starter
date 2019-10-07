@@ -30,5 +30,7 @@ export default
       new item 'Home', '/'
       new item 'Truc', '/truc'
       new item 'Muche', '/muche'
+      new item 'Posts', '/posts'
+      new item 'GQL', '/___explore'
     ]
 </script>

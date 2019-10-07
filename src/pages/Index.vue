@@ -1,6 +1,6 @@
 <template lang='pug'>
 Layout
-    v-btn.primary home
+    v-btn home
 </template>
 
 <script lang='coffee'>

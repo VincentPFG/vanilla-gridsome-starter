@@ -1,4 +1,5 @@
 nodeExternals = require 'webpack-node-externals'
+axios = require 'axios'
 
 module.exports = (api) ->
 	api.chainWebpack (server, { isServer }) ->
@@ -10,5 +11,12 @@ module.exports = (api) ->
 				]
 			]
 			
-	api.loadSource (store) ->
-		# // Use the Data store API here: https://gridsome.org/docs/data-store-api
+	api.loadSource ({addCollection}) ->
+		{data} = await axios.get 'http://localhost:1337/personnes'
+		# console.log typeof addCollection
+		collection = addCollection 'Personnes'
+		for item in data
+			collection.addNode item
+
+	# api.loadSource (actions) ->
+	# 	console.log 'addCollection: ', actions.addCollection

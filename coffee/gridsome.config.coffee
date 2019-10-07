@@ -4,11 +4,11 @@ module.exports =
 	plugins: [
 		use: 'gridsome-plugin-pug'
 	,
-	# 	use: '@gridsome/source-filesystem'
-	# 	options:
-	# 		path: 'blog/**/*.md'
-	# 		typeName: 'Post'
-	# ,
+		use: '@gridsome/source-filesystem'
+		options:
+			path: 'blog/**/*.md'
+			typeName: 'Post'
+	,
 		use: '@gridsome/source-filesystem'
 		options:
 			path: 'posts/**/*.md'
