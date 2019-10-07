@@ -6,8 +6,7 @@
     "develop": "gridsome develop",
     "explore": "gridsome explore",
     "coffee": "coffee -o ./ -wc coffee",
-    "push": "/home/vincent/Bureau/scripts/git_push.ps1",
-    "update": "npm i gridsome@latest"
+    "update": "npm i gridsome@latest vuetify@latest"
   },
   "dependencies": {
     "@gridsome/source-filesystem": "^0.6.0",
