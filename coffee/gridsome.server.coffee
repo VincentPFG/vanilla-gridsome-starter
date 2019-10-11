@@ -7,7 +7,7 @@ module.exports = (api) ->
 			server.externals [
 				nodeExternals whitelist: [
 					/^vuetify/
-					/\.css$/
+					/\.(c|sa)ss$/
 				]
 			]
 			

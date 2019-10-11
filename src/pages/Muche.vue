@@ -2,7 +2,17 @@
 Layout
     v-btn muche
 
-    p personnes : {{personnes}}
+    v-simple-table
+        template(#default)
+            thead
+                th id
+                th name
+                th age
+            tbody
+                tr(v-for='personne in personnes')
+                    td {{personne.id}}
+                    td {{personne.name}}
+                    td {{personne.age}}
 </template>
 
 <script lang='coffee'>
@@ -13,6 +23,7 @@ export default
         personnes: gql """
             {
                 personnes {
+                    id
                     name
                     age
                 }

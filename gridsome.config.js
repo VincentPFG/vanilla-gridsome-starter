@@ -34,6 +34,31 @@
         anchorClassName: 'icon icon-link',
         plugins: []
       }
+    },
+    configureWebpack: function(config) {
+      var i, j, len, ref, rule;
+      ref = config.module.rules;
+      for (i = j = 0, len = ref.length; j < len; i = ++j) {
+        rule = ref[i];
+        if (String(rule.test) === String(/\.sass$/)) {
+          config.module.rules[i] = {
+            test: /\.sass$/,
+            use: [
+              'style-loader',
+              'css-loader',
+              {
+                loader: 'sass-loader',
+                options: {
+                  sassOptions: {
+                    indentedSyntax: true
+                  }
+                }
+              }
+            ]
+          };
+        }
+      }
+      return config;
     }
   };
 
