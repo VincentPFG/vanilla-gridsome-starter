@@ -1,12 +1,13 @@
 <template lang='pug'>
 Layout
-    v-btn home
+    v-btn.accent home
+    p.primary du texte
 </template>
 
 <script lang='coffee'>
 
 </script>
 
-<style lang="stylus">
+<style lang="sass">
 
 </style>
