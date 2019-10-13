@@ -7,7 +7,7 @@ v-app
 					v-list-item-title {{item.name}}
 	v-app-bar(app)
 		v-app-bar-nav-icon(@click='drawer = !drawer')
-		v-toolbar-title#title Le Titre
+		v-toolbar-title Le Titre
 		v-spacer
 		Dark
 	v-content
@@ -25,19 +25,5 @@ export default
 	
 	data: ->
 		drawer: null
-		nav: [
-			new item 'Home', '/'
-			new item 'Truc', '/truc'
-			new item 'Muche', '/muche'
-			new item 'Posts', '/posts'
-			new item 'GQL', '/___explore'
-		]
+		nav: []
 </script>
-
-<style lang='sass'>
-@import url('https://fonts.googleapis.com/css?family=Charm|Marck+Script&display=swap')
-
-#title
-	font-family: Charm, 'Marck Script'
-	font-size: x-large
-</style>

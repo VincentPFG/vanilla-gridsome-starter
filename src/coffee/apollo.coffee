@@ -6,4 +6,4 @@ Vue.use VueApollo
 
 export default new VueApollo
 	defaultClient: new ApolloClient
-		uri: 'http://localhost:1337/graphql'
+		uri: ''
