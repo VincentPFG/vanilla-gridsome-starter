@@ -1,3 +1,3 @@
-import main from '~/coffee/main.coffee'
+import main from '~/main/main.coffee'
 
 export default main
