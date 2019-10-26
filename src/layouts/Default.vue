@@ -7,13 +7,21 @@ v-app
 					v-list-item-title {{item.name}}
 	v-app-bar(app)
 		v-app-bar-nav-icon(@click='drawer = !drawer')
-		v-toolbar-title Le Titre
+		v-toolbar-title {{$static.metadata.siteName}}
 		v-spacer
 		Dark
 	v-content
 		v-container
 			slot
 </template>
+
+<static-query>
+{
+	metadata {
+		siteName
+	}
+}
+</static-query>
 
 <script lang='coffee'>
 import Dark from '~/components/Dark'

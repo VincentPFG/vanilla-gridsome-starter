@@ -3,7 +3,7 @@ import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import '@mdi/font/css/materialdesignicons.css'
 import colors from 'vuetify/lib/util/colors'
-import {load} from 'webfontloader'
+# import {load} from 'webfontloader'
 
 Vue.use Vuetify
 
@@ -20,6 +20,8 @@ export default new Vuetify
                 ...theme
             }
 
-load
-    google:
-        families: ['Roboto:100,300,400,500,700,900']
+if window? # patch
+    {load} = require 'webfontloader'
+    load
+        google:
+            families: ['Roboto:100,300,400,500,700,900']
