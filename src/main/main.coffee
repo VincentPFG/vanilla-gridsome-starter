@@ -4,7 +4,7 @@ import apolloProvider from './apollo.coffee'
 import store from './vuex.coffee'
 
 
-export default (Vue, {appOptions}) ->
+export default (Vue, {appOptions, head}) ->
 	Vue.component 'Layout', DefaultLayout
 
 	Object.assign appOptions, {
@@ -12,3 +12,7 @@ export default (Vue, {appOptions}) ->
 		apolloProvider
 		store
 	}
+
+	head.link.push
+		href: 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900'
+		rel: 'stylesheet'

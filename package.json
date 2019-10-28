@@ -5,8 +5,11 @@
     "gridsome:develop": "gridsome develop",
     "gridsome:build": "gridsome build",
     "netlify:dev": "netlify dev",
+    "netlify:deploy": "netlify deploy",
+    "netlify:open": "netlify open",
     "coffee:gridsome": "coffee -o ./ -wc gridsome",
-    "coffee:functions": "coffee -o ./functions/js -wc ./functions/coffee"
+    "coffee:functions": "coffee -o ./functions/js -wc ./functions/coffee",
+    "update": "sudo npm i -g npm; sudo npm i -g @gridsome/cli; sudo npm i -g netlify-cli; npm update"
   },
   "dependencies": {
     "@gridsome/source-filesystem": "^0.6.2",
@@ -32,7 +35,6 @@
     "vue-loader": "^15.7.1",
     "vuetify": "^2.1.5",
     "vuex": "^3.1.1",
-    "webfontloader": "^1.6.28",
     "webpack-node-externals": "^1.7.2"
   },
   "devDependencies": {

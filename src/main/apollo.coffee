@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueApollo from 'vue-apollo'
 import ApolloClient from 'apollo-boost'
-import 'isomorphic-fetch' # patch
+import 'isomorphic-fetch' # SSR patch
 
 Vue.use VueApollo
 
