@@ -10,6 +10,7 @@ theme = {}
 
 export default new Vuetify
     theme:
+        dark: on
         themes:
             light: {
                 ...theme
