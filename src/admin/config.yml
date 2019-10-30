@@ -1,6 +1,6 @@
 backend:
     name: github
-    repo: VincentPFG/gridsome
+    repo: VincentPFG/
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
