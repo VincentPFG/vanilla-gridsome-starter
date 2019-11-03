@@ -4,12 +4,8 @@
   "scripts": {
     "gridsome:develop": "gridsome develop",
     "gridsome:build": "gridsome build",
-    "netlify:dev": "netlify dev",
-    "netlify:deploy": "netlify deploy",
-    "netlify:open": "netlify open",
-    "coffee:gridsome": "coffee -o ./ -wc gridsome",
     "coffee:functions": "coffee -o ./functions/js -wc ./functions/coffee",
-    "update": "sudo npm i -g npm; sudo npm i -g @gridsome/cli; sudo npm i -g netlify-cli; npm update"
+    "npm:update": "sudo npm i -g npm; sudo npm i -g @gridsome/cli; sudo npm i -g netlify-cli; npm update"
   },
   "dependencies": {
     "@gridsome/source-filesystem": "^0.6.2",
