@@ -1,7 +1,10 @@
 import DefaultLayout from '~/layouts/Default.vue'
+
 import vuetify from './vuetify.coffee'
 import apolloProvider from './apollo.coffee'
 import store from './vuex.coffee'
+
+import axios from 'axios'
 
 
 export default (Vue, {appOptions, head}) ->
@@ -16,3 +19,5 @@ export default (Vue, {appOptions, head}) ->
 	head.link.push
 		href: 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900'
 		rel: 'stylesheet'
+
+	Vue::$axios = axios

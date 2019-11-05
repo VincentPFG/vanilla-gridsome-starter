@@ -14,12 +14,6 @@ module.exports =
 		use: 'gridsome-plugin-netlify-cms-paths'
 		options: contentTypes: ['Post']
 	]
-	
-	chainWebpack: (config) ->
-		config.module.rule 'coffee'
-			.test /\.coffee$/
-			.use 'coffee-loader'
-			.loader 'coffee-loader'
 
 	transformers:
 		remark:
@@ -27,6 +21,12 @@ module.exports =
 			externalLinksRel: ['nofollow', 'noopener', 'noreferrer']
 			anchorClassName: 'icon icon-link'
 			plugins: []
+
+	chainWebpack: (config) ->
+		config.module.rule 'coffee'
+			.test /\.coffee$/
+			.use 'coffee-loader'
+			.loader 'coffee-loader'
 
 	configureWebpack: (config) ->
 		for rule, i in config.module.rules
