@@ -2,3 +2,7 @@
 command = 'gridsome build'
 publish = 'dist'
 functions = 'functions/js'
+
+[[redirects]]
+from = '/f/*'
+to = '/.netlify/functions/:splat'
