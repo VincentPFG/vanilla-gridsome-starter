@@ -13,6 +13,8 @@ module.exports =
 	,
 		use: 'gridsome-plugin-netlify-cms-paths'
 		options: contentTypes: ['Post']
+	,
+		use: 'gridsome-transformer-netlify'
 	]
 
 	transformers:
@@ -21,6 +23,7 @@ module.exports =
 			externalLinksRel: ['nofollow', 'noopener', 'noreferrer']
 			anchorClassName: 'icon icon-link'
 			plugins: []
+		netlify: {}
 
 	chainWebpack: (config) ->
 		config.module.rule 'coffee'
