@@ -21,6 +21,7 @@
     "gridsome": "^0.7.9",
     "gridsome-plugin-netlify-cms": "^1.0.9",
     "gridsome-plugin-netlify-cms-paths": "^0.3.0",
+    "gridsome-transformer-netlify": "^1.0.3",
     "isomorphic-fetch": "^2.2.1",
     "netlify-cli": "^2.19.0",
     "netlify-cms": "^2.9.7",

@@ -32,6 +32,8 @@ module.exports =
 			.loader 'coffee-loader'
 
 	configureWebpack: (config) ->
+		config.resolve.extensions.unshift '.coffee'
+		# patch Sass
 		for rule, i in config.module.rules
 			if String(rule.test) is String /\.sass$/
 				config.module.rules[i] =
