@@ -2,19 +2,15 @@ module.exports =
 	siteName: 'Gridsome'
 
 	plugins: [
-		use: 'gridsome-plugin-pug'
-	,
+		'gridsome-plugin-pug'
 		use: '@gridsome/source-filesystem'
 		options:
 			path: 'blog/**/*.md'
 			typeName: 'Post'
-	,
-		use: 'gridsome-plugin-netlify-cms'
-	,
+		'gridsome-plugin-netlify-cms'
 		use: 'gridsome-plugin-netlify-cms-paths'
 		options: contentTypes: ['Post']
-	,
-		use: 'gridsome-transformer-netlify'
+		'gridsome-transformer-netlify'
 	]
 
 	transformers:
