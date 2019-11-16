@@ -1,7 +1,16 @@
-module.exports = 
+localPlugins = ('~/plugins/' + plugin for plugin in [
+	'vuetify'
+	'apollo'
+	'vuex'
+	'axios'
+])
+
+module.exports =
+
 	siteName: 'Gridsome'
 
 	plugins: [
+		...localPlugins
 		'gridsome-plugin-pug'
 		use: '@gridsome/source-filesystem'
 		options:
