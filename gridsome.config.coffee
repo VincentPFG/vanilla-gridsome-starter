@@ -1,11 +1,10 @@
 localPlugins = ('~/plugins/' + plugin for plugin in [
+	'coffeescript'
 	'sass'
 	'vuetify'
 	'apollo'
 	'vuex'
 	'axios'
-	'test'
-	'ntest'
 ])
 
 module.exports =
@@ -32,26 +31,3 @@ module.exports =
 			anchorClassName: 'icon icon-link'
 			plugins: []
 		netlify: {}
-
-	chainWebpack: (config) ->
-		config.module.rule 'coffee'
-			.test /\.coffee$/
-			.use 'coffee-loader'
-			.loader 'coffee-loader'
-
-	# configureWebpack: (config) ->
-	# 	config.resolve.extensions.unshift '.coffee'
-	# 	# patch Sass
-	# 	for rule, i in config.module.rules
-	# 		if String(rule.test) is String /\.sass$/
-	# 			config.module.rules[i] =
-	# 				test: /\.sass$/
-	# 				use: [
-	# 					'style-loader'
-	# 					'css-loader'
-	# 					loader: 'sass-loader'
-	# 					options:
-	# 						sassOptions:
-	# 							indentedSyntax: yes
-	# 				]
-	# 	config
