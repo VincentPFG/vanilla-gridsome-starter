@@ -1,1 +1,1 @@
-module.exports = require('./gridsome.client.coffee')
+module.exports = require('./gridsome.client')
