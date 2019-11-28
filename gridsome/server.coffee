@@ -1,17 +1,7 @@
-nodeExternals = require 'webpack-node-externals'
-
-module.exports = (api, options) ->
-
-	api.chainWebpack (server, {isServer}) ->
-		if isServer
-			server.externals [
-				nodeExternals whitelist: [
-					/\.(c|sa)ss$/
-				]
-			]
+module.exports = ({configureWebpack}) ->
 
 	# patch Sass
-	api.configureWebpack (config) ->
+	configureWebpack (config) ->
 		for rule, i in config.module.rules
 			if String(rule.test) is String /\.sass$/
 				config.module.rules[i] =

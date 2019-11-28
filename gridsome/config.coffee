@@ -1,18 +1,18 @@
-localPlugins = ('~/plugins/' + plugin for plugin in [
-	'coffeescript'
-	'sass'
-	'vuetify'
-	'apollo'
-	'vuex'
-	'axios'
-])
-
 module.exports =
 
 	siteName: 'Gridsome'
 
 	plugins: [
-		...localPlugins
+		...(require '../plugins') [
+			use: 'whitelist'
+			options: [
+				/\.(c|sa)ss$/
+				/^vuetify/
+			]
+			'sass-patch'
+			'coffeescript'
+			'vuetify'
+		]
 		'gridsome-plugin-pug'
 		use: '@gridsome/source-filesystem'
 		options:

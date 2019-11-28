@@ -7,5 +7,4 @@ export default (Vue, options, {appOptions}) ->
     Vue.use VueApollo
 
     appOptions.apolloProvider = new VueApollo
-        defaultClient: new ApolloClient
-            uri: ''
+        defaultClient: new ApolloClient options

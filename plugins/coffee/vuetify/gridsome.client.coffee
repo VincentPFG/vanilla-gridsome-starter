@@ -7,18 +7,7 @@ export default (Vue, options, {appOptions, head}) ->
 
     Vue.use Vuetify
 
-    theme = {}
-
-    appOptions.vuetify = new Vuetify
-        theme:
-            dark: on
-            themes:
-                light: {
-                    ...theme
-                }
-                dark: {
-                    ...theme
-                }
+    appOptions.vuetify = new Vuetify options 
 
     head.link.push
         href: 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900'

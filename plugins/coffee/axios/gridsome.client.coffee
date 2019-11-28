@@ -1,5 +1,5 @@
 import axios from 'axios'
 
-export default (Vue, options, {}) ->
+export default (Vue) ->
 
     Vue::$axios = axios

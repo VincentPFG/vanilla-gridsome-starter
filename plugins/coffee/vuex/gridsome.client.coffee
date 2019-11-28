@@ -6,4 +6,4 @@ export default (Vue, options, {appOptions}) ->
 
     Vue::$x = Vuex
 
-    appOptions.vuex = new Vuex.Store
+    appOptions.vuex = new Vuex.Store options
