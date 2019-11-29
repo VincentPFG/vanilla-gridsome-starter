@@ -6,7 +6,7 @@ module.exports = ({configureWebpack}) ->
 				config.module.rules[i] =
 					test: /\.sass$/
 					use: [
-						'style-loader'
+						'isomorphic-style-loader'
 						'css-loader'
 						loader: 'sass-loader'
 						options:
