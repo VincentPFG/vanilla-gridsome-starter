@@ -19,9 +19,6 @@ module.exports =
 			path: 'blog/**/*.md'
 			typeName: 'Post'
 		'gridsome-plugin-netlify-cms'
-		use: 'gridsome-plugin-netlify-cms-paths'
-		options: contentTypes: ['Post']
-		'gridsome-transformer-netlify'
 	]
 
 	transformers:
