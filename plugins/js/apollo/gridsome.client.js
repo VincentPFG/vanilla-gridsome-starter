@@ -5,9 +5,12 @@ import ApolloClient from 'apollo-boost';
 
 import 'isomorphic-fetch';
 
+import gql from 'graphql-tag';
+
 export default function(Vue, options, {appOptions}) {
   Vue.use(VueApollo);
-  return appOptions.apolloProvider = new VueApollo({
+  appOptions.apolloProvider = new VueApollo({
     defaultClient: new ApolloClient(options)
   });
+  return Vue.prototype.$gql = gql;
 };
