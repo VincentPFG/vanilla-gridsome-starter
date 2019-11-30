@@ -6,7 +6,7 @@ module.exports =
 		...(require '../plugins') [
 			use: 'whitelist'
 			options: [
-				/\.(c|sa)ss$/
+				/\.(s?c|sa)ss$/
 				/^vuetify/
 			]
 			'sass-patch'
