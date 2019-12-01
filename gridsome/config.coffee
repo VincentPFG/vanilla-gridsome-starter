@@ -32,4 +32,4 @@ module.exports =
 		loaderOptions:
 			sass:
 				sassOptions:
-					intentedSyntax: yes
+					indentedSyntax: yes
