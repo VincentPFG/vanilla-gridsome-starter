@@ -9,7 +9,6 @@ module.exports =
 				/\.(s?c|sa)ss$/
 				/^vuetify/
 			]
-			'sass-patch'
 			'coffeescript'
 			'vuetify'
 		]
@@ -28,3 +27,8 @@ module.exports =
 			anchorClassName: 'icon icon-link'
 			plugins: []
 		netlify: {}
+
+	css:
+		sass:
+			sassOptions:
+				intentedSyntax: yes
