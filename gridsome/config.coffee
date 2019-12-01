@@ -29,6 +29,7 @@ module.exports =
 		netlify: {}
 
 	css:
-		sass:
-			sassOptions:
-				intentedSyntax: yes
+		loaderOptions:
+			sass:
+				sassOptions:
+					intentedSyntax: yes
