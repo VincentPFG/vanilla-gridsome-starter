@@ -28,8 +28,4 @@ module.exports =
 			plugins: []
 		netlify: {}
 
-	css:
-		loaderOptions:
-			sass:
-				sassOptions:
-					indentedSyntax: yes
+	css: loaderOptions: sass: sassOptions: indentedSyntax: yes
