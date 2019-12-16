@@ -13,7 +13,7 @@ query Post($path: String!) {
 </page-query>
 
 <script lang='coffee'>
-import '~/assets/markdown.sass'
+import '~/assets/markdown.css'
 
 export default
     metaInfo: ->

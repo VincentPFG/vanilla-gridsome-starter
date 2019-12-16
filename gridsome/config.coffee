@@ -10,7 +10,8 @@ module.exports =
 				/^vuetify/
 			]
 			'coffeescript'
-			'vuetify'
+			use: 'vuetify'
+			options: require '../vuetify.theme.coffee'
 		]
 		'gridsome-plugin-pug'
 		use: '@gridsome/source-filesystem'
@@ -27,5 +28,3 @@ module.exports =
 			anchorClassName: 'icon icon-link'
 			plugins: []
 		netlify: {}
-
-	css: loaderOptions: sass: sassOptions: indentedSyntax: yes

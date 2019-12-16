@@ -6,7 +6,3 @@ Layout
 <script lang='coffee'>
 
 </script>
-
-<style lang="sass">
-
-</style>
