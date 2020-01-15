@@ -4,6 +4,7 @@ module.exports =
 
 	plugins: [
 		...(require '../plugins') [
+			'sass-patch'
 			use: 'whitelist'
 			options: [
 				/\.(s?c|sa)ss$/
