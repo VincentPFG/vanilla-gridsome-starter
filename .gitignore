@@ -9,3 +9,5 @@ dist
 
 # Local Netlify folder
 .netlify
+
+src/pages/Test.vue
