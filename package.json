@@ -6,8 +6,9 @@
     "develop": "gridsome develop",
     "build": "gridsome build",
     "functions": "coffee -o ./functions/js -wc ./functions/coffee",
+    "templates": "pug -o static/templates -w templates",
     "plugins": "coffee -o ./plugins/js -wc ./plugins/coffee",
-    "update": "sudo npm i -g npm; sudo npm i -g @gridsome/cli; sudo npm i -g netlify-cli; npm update"
+    "cli": "npm i -g npm @gridsome/cli netlify-cli coffeescript pug-cli"
   },
   "dependencies": {
     "@gridsome/source-filesystem": "^0.6.2",
