@@ -2,13 +2,12 @@
   "name": "my-gridsome-site",
   "private": true,
   "scripts": {
-    "explore": "gridsome explore",
-    "develop": "gridsome develop",
+    "gql": "gridsome explore",
+    "dev": "gridsome develop",
     "build": "gridsome build",
     "functions": "coffee -o ./functions/js -wc ./functions/coffee",
     "templates": "pug -o static/templates -w templates",
     "plugins": "coffee -o ./plugins/js -wc ./plugins/coffee",
-    "cli": "npm i -g npm @gridsome/cli netlify-cli coffeescript pug-cli"
   },
   "dependencies": {
     "@gridsome/source-filesystem": "^0.6.2",
@@ -27,6 +26,7 @@
     "isomorphic-fetch": "^2.2.1",
     "netlify-cli": "^2.29.0",
     "netlify-cms": "^2.10.6",
+    "pug-cli": "^1.0.0-alpha6",
     "sass": "^1.24.4",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.1.2",
