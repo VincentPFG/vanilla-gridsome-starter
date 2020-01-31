@@ -7,7 +7,7 @@
     "build": "gridsome build",
     "functions": "coffee -o ./functions/js -wc ./functions/coffee",
     "templates": "pug -o static/templates -w templates",
-    "plugins": "coffee -o ./plugins/js -wc ./plugins/coffee",
+    "plugins": "coffee -o ./plugins/js -wc ./plugins/coffee"
   },
   "dependencies": {
     "@gridsome/source-filesystem": "^0.6.2",
