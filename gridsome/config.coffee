@@ -20,6 +20,7 @@ module.exports =
 			path: 'blog/**/*.md'
 			typeName: 'Post'
 		'gridsome-plugin-netlify-cms'
+		# '~/plugins/js/print-webpack-config'
 	]
 
 	transformers:

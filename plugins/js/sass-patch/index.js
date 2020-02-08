@@ -2,19 +2,17 @@
 (function() {
   module.exports = function({configureWebpack}) {
     return configureWebpack(function(config) {
-      var i, j, k, len, len1, len2, loader, one, ref, ref1, ref2, rule;
+      var i, j, k, len, len1, len2, oneOf, ref, test, use, used;
       ref = config.module.rules;
       for (i = 0, len = ref.length; i < len; i++) {
-        rule = ref[i];
-        if ((String(rule.test)) === String(/\.sass$/)) {
-          ref1 = rule.oneOf;
-          for (j = 0, len1 = ref1.length; j < len1; j++) {
-            one = ref1[j];
-            ref2 = one.use;
-            for (k = 0, len2 = ref2.length; k < len2; k++) {
-              loader = ref2[k];
-              if (loader.loader === 'sass-loader') {
-                loader.options = {
+        ({test, oneOf} = ref[i]);
+        if ((String(test)) === String(/\.sass$/)) {
+          for (j = 0, len1 = oneOf.length; j < len1; j++) {
+            ({use} = oneOf[j]);
+            for (k = 0, len2 = use.length; k < len2; k++) {
+              used = use[k];
+              if (used.loader === 'sass-loader') {
+                used.options = {
                   sassOptions: {
                     indentedSyntax: true
                   }
@@ -24,7 +22,6 @@
           }
         }
       }
-      // console.log JSON.stringify rule, null, '\t'
       return config;
     });
   };
