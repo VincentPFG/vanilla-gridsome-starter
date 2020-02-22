@@ -12,4 +12,4 @@ dist
 
 src/pages/Test.vue
 
-**.js
+**/*.js
