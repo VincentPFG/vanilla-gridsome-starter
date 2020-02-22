@@ -1,11 +1,9 @@
-require 'coffeescript/register'
-
 module.exports =
 
 	siteName: 'Gridsome'
 
 	plugins: [
-		...(require '../plugins') [
+		...(require './plugins') [
 			'sass-patch'
 			use: 'whitelist'
 			options: [
@@ -14,7 +12,7 @@ module.exports =
 			]
 			'coffeescript'
 			use: 'vuetify'
-			options: require '../vuetify.theme.coffee'
+			options: require '../vuetify.theme.js'
 		]
 		'gridsome-plugin-pug'
 		use: '@gridsome/source-filesystem'
