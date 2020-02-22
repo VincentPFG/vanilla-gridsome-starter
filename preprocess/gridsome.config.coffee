@@ -12,7 +12,7 @@ module.exports =
 			]
 			'coffeescript'
 			use: 'vuetify'
-			options: require '../vuetify.theme.js'
+			options: require './vuetify.theme.js'
 		]
 		'gridsome-plugin-pug'
 		use: '@gridsome/source-filesystem'
