@@ -5,9 +5,8 @@
     "gql": "gridsome explore",
     "dev": "gridsome develop",
     "build": "gridsome build",
-    "functions": "coffee -o ./functions/js -wc ./functions/coffee",
-    "templates": "pug -o static/templates -w templates",
-    "plugins": "coffee -o ./plugins/js -wc ./plugins/coffee"
+    "coffee": "coffee -o . -wc preprocess",
+    "pug": "pug -o . -w preprocess"
   },
   "dependencies": {
     "@gridsome/source-filesystem": "^0.6.2",

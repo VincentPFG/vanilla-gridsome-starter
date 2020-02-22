@@ -11,3 +11,5 @@ dist
 .netlify
 
 src/pages/Test.vue
+
+**.js

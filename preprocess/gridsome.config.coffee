@@ -1,3 +1,5 @@
+require 'coffeescript/register'
+
 module.exports =
 
 	siteName: 'Gridsome'
