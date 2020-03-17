@@ -1,22 +1,9 @@
-colors = require 'vuetify/es5/util/colors'
-
-localPlugins = (plugins) -> for id in plugins
-    id = use: id if (typeof id) is 'string'  
-    id.use = '~/plugins/' + id.use
-    id
-
-vuetify = theme:
-	dark: yes
-	themes:
-		light: {}
-		dark: {}
-
 module.exports =
 
 	siteName: 'Gridsome'
 
 	plugins: [
-		...localPlugins [
+		...(require './localPlugins') [
 			'sass-patch'
 			use: 'whitelist'
 			options: [
@@ -25,7 +12,7 @@ module.exports =
 			]
 			'coffeescript'
 			use: 'vuetify'
-			options: vuetify
+			options: require './vuetify'
 		]
 		'gridsome-plugin-pug'
 		use: '@gridsome/source-filesystem'

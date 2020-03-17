@@ -1,7 +1,7 @@
 import backendless from 'backendless'
 
-export default (Vue, options) ->
+export default (Vue, {apiId, apiKey}) ->
 
-    backendless.initApp options.apiId, options.apiKey
+    backendless.initApp apiId, apiKey
 
-    Vue::$bl = backendless
+    Vue::$backendless = backendless
