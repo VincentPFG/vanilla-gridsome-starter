@@ -24,11 +24,21 @@ v-app
 </static-query>
 
 <script lang='coffee'>
+import Vuetify from 'vuetify/lib'
+import colors from 'vuetify/lib/util/colors'
 import Dark from '~/components/Dark'
 
 item = (@name, @route) ->
 
 export default
+
+	vuetify: new Vuetify
+		theme:
+			dark: yes
+			themes:
+				light: {}
+				dark: {}
+
 	components: {Dark}
 	
 	data: ->
