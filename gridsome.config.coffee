@@ -3,7 +3,7 @@ module.exports =
 	siteName: 'Gridsome'
 
 	plugins: [
-		...(require './localPlugins') [
+		...(require './localPluginsHelper') [
 			'sass-patch'
 			use: 'whitelist'
 			options: [
@@ -11,8 +11,7 @@ module.exports =
 				/^vuetify/
 			]
 			'coffeescript'
-			use: 'vuetify'
-			options: require './vuetify'
+			'vuetify'
 		]
 		'gridsome-plugin-pug'
 		use: '@gridsome/source-filesystem'
