@@ -9,6 +9,7 @@
     "pug": "pug -o . -w pug"
   },
   "dependencies": {
+    "@chec/commerce.js": "^2.0.1",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.3.4",
     "@mdi/font": "^4.7.95",
