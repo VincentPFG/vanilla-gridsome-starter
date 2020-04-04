@@ -1,11 +1,8 @@
-module.exports = ({chainWebpack, configureWebpack}) ->
+module.exports = ({configureWebpack}) ->
 
-    chainWebpack (config) ->
-        config.module.rule 'coffee'
-            .test /\.coffee$/
-            .use 'coffee-loader'
-            .loader 'coffee-loader'
-
-    configureWebpack (config) ->
-        config.resolve.extensions.unshift '.coffee'
-        config
+    configureWebpack
+        module: rules: [
+            test: /\.coffee$/
+            use: 'coffee-loader'
+        ]
+        resolve: extensions: ['.coffee']

@@ -1,7 +1,7 @@
 [build]
 command = 'gridsome build'
 publish = 'dist'
-functions = 'functions/js'
+functions = 'functions/'
 
 [[redirects]]
 from = '/f/*'

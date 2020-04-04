@@ -3,6 +3,7 @@
   module.exports = function({configureWebpack}) {
     return configureWebpack(function(config) {
       console.log(JSON.stringify(config, null, '  '));
+      console.log(config);
       return config;
     });
   };
