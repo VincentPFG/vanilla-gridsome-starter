@@ -9559,7 +9559,7 @@ netlify-cms@^2.10.6:
     react "^16.8.4"
     react-dom "^16.8.4"
 
-netlify-identity-widget@^1.5.2:
+netlify-identity-widget@^1.5.2, netlify-identity-widget@^1.5.6:
   version "1.5.6"
   resolved "https://registry.yarnpkg.com/netlify-identity-widget/-/netlify-identity-widget-1.5.6.tgz#b841d4d469ad37bdc47e876d87cc2926aba2c302"
   integrity sha512-DvWVUGuswOd+IwexKjzIpYcqYMrghmnkmflNqCQc4lG4KX55zE3fFjfXziCTr6LibP7hvZp37s067j5N3kRuyw==
