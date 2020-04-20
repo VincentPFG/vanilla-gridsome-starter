@@ -1,8 +1,6 @@
-<template lang='pug'>
-Layout
-    
+<template>
+	<Layout> </Layout>
 </template>
 
-<script lang='coffee'>
-
+<script>
 </script>

@@ -1,6 +1,7 @@
-<template lang='pug'>
-Layout
-    div(v-html='$page.post.content')
+<template>
+	<Layout>
+		<div v-html="$page.post.content"></div>
+	</Layout>
 </template>
 
 <page-query>
@@ -12,10 +13,12 @@ query Post($path: String!) {
 }
 </page-query>
 
-<script lang='coffee'>
-import '~/assets/markdown.sass'
+<script>
+import '~/assets/markdown.css'
 
-export default
-    metaInfo: ->
-        title: @$page.post.title
+export default {
+	metaInfo: {
+		title: this.$page.post.title
+	}
+}
 </script>

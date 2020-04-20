@@ -1,17 +1,21 @@
-<template lang='pug'>
-v-btn(icon @click='toggle')
-	v-icon mdi-theme-light-dark
+<template>
+	<v-btn icon="icon" @click="toggle">
+		<v-icon>mdi-theme-light-dark</v-icon>
+	</v-btn>
 </template>
 
-<script lang='coffee'>
-export default
-	mounted: ->
-		@$vuetify.theme.dark = if localStorage.dark?
-			JSON.parse localStorage.dark
-		else (matchMedia '(prefers-color-scheme: dark)').matches
-            
-	methods:
-		toggle: ->
-			@$vuetify.theme.dark = not @$vuetify.theme.dark
-			localStorage.dark = @$vuetify.theme.dark
+<script>
+export default {
+	mounted() {
+		this.$vuetify.theme.dark = localStorage.dark
+			? JSON.parse(localStorage.dark)
+			: matchMedia('(prefers-color-scheme: dark)').matches
+	},
+	methods: {
+		toggle() {
+			this.$vuetify.theme.dark = !this.$vuetify.theme.dark
+			localStorage.dark = this.$vuetify.theme.dark
+		}
+	}
+}
 </script>
