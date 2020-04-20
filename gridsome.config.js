@@ -9,7 +9,6 @@ module.exports = {
 			},
 			'vuetify'
 		]),
-		'gridsome-plugin-pug',
 		{
 			use: '@gridsome/source-filesystem',
 			options: {
