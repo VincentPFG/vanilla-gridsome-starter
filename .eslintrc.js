@@ -1,4 +1,9 @@
 module.exports = {
 	parser: 'vue-eslint-parser',
-	extends: ['plugin:gridsome/recommended']
+	extends: [
+		'eslint:recommended',
+		'plugin:vue/recommended',
+		'plugin:gridsome/recommended'
+	],
+	env: { node: true }
 }
